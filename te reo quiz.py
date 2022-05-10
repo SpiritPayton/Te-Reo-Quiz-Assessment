@@ -12,7 +12,7 @@ def yes_no(question_text):
 
         # if they say yes, continue program
         if answer == "yes" or answer == "y":
-            answer = "Yes"
+            answer = "yes"
             return answer
 
         # if they say no, display instructions
@@ -31,16 +31,10 @@ def instructions():
     print()
     print("I'm going to give you four names of food in Te Reo,")
     print("then the name of a food in English.")
-    print("The English word will be the same food as one of the Te Reo words.")
     print()
-    print("It costs $1 to play each round but, depending on your prize, you "
-          "could win some money back. These are the payout amounts:\n"
-          "\tUnicorn : $5 (balance increases by $4\n"
-          "\tHorse : $0.50 (balance decreases by $0.50\n"
-          "\tZebra : $0.50 (balance decreases by $0.50\n"
-          "\tDonkey : $0 (balance decreases by $1\n")
-    print("\nSee if you can avoid donkeys, get the unicorns, and finish with "
-          "more money than you started with.")
+    print("The English word will mean the same food as one of the Te Reo words.")
+    print("You will need to select which word you think (or hopefully know) it is.")
+    print("There will be 10 rounds of questions. Above five right is a pass.")
 
 
 # function to format text output
@@ -51,14 +45,24 @@ def formatter(symbol, text):
     return f"{top_bottom}\n{formatted_text}\n{top_bottom}"
 
 
+# answers
+"bread" == "paraoa"
+"cheese" == "tīhi"
+"fish" == "ika"
+"fruits" == "huarākau"
+
+
 # Main routine goes here
 print(formatter("-", "Kia ora! Are you ready to test your Te Reo Māori skills?"))
 print()
 
-print(formatter("-", "You're about to learn how to say some kai names in Māori."))
+print("You're about to learn how to say some kai names in Māori.")
 print()
 played_before = yes_no("Have you played this game before?: ").lower()
 print()
 
 if played_before == "no":
     instructions()
+
+
+# begin game
