@@ -1,15 +1,21 @@
 """Function to display 4 words in Te Reo and 1 word in English,
 the English word meaning the same as one of the Te Reo words.
+(the code is mostly copied from someone online,
+and it's not actually an interactive quiz yet)
 """
 
 from random import shuffle, sample
 
-alt1 = """red, rosso
-yellow, giallo
-green, verde
-white, bianco
-black, nero
-orange, arancione"""
+# the answers
+alt1 = """bread, paraoa
+cheese, tīhi
+fish, ika
+fruits, huarākau
+meat, mīti
+soup, hupa
+coffee, kawhe
+egg, hēki
+coconut water, wai kokonati"""
 
 alt1 = alt1.splitlines()
 qnum = len(alt1)
@@ -31,7 +37,7 @@ for n in range(qnum):
 	answers.pop(pos)
 	shuffle(answers)
 	a2, a3, a4 = sample(answers, 3)
-	qq = f"What is the italian word for {questions[n]}"
+	qq = f"What is the Maori word for {questions[n]}"
 	x = [a1, a2, a3, a4]
 	shuffle(x)
 	right = x.index(a1)
@@ -57,4 +63,3 @@ for ss in sol:
 	q, s = ss.split(",")
 	print(q, s, " [" + lettsol[counter] + "]")
 	counter += 1
-
