@@ -11,4 +11,4 @@ elif answer1 != "a" or answer1 != "paraoa":
     print("Wrong! The answer is paraoa")
     print("Score: ", score)
     print("\n")
-else: 
+else:
