@@ -15,16 +15,17 @@ question_prompts = [
     "What is the Maori word for fruits? \na. huarākau \nb. hēki \nc. ika\n\n"]
 
 
-"bread" == "paraoa"
-"cheese" == "tīhi"
-"fish" == "ika"
-"fruits" == "huarākau"
-"salad" == "huamata"
-"meat" == "mīti"
-"soup" == "hupa"
-"coffee" == "kawhe"
+# ignore this
+"""bread" = "paraoa"
+"cheese" = "tīhi"
+"fish" = "ika"
+"fruits" = "huarākau"
+"salad" = "huamata"
+"meat" = "mīti"
+"soup" = "hupa"
+"coffee" = "kawhe"
 "egg" == "hēki"
-"coconut water" == "wai kokonati"
+"coconut water" = "wai kokonati"""
 
 
 questions = [
