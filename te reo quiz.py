@@ -48,12 +48,6 @@ def formatter(symbol, text):
 # while loop to play the quiz again or exit
 play_again = ""
 
-while play_again != "X":
-
-    play_again = input("\nDo you want to play another round?\n<enter> "
-                       "to play "
-                       "again or 'X' to exit").lower()
-
 
 # Main routine goes here
 score = 0
@@ -132,3 +126,11 @@ while play_again != "X":
         print("Your total score is:", score, "- You did ok.")
     else:
         print("Your total score is:", score, "- 非常好。")
+
+if balance < 1:
+    print("\nSorry but you have run out of money")
+    play_again = "x"
+else:
+    play_again = input("\nDo you want to play another round?\n<enter> "
+                       "to play "
+                       "again or 'X' to exit").lower()
