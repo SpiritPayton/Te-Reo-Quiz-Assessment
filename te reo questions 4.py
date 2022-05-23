@@ -42,7 +42,7 @@ else:
 
 # question 3
 answer3 = input("What is the Maori word for fruits? \na. huarākau \nb. hēki \nc. ika\n\n").lower()
-if answer3 == "a" or answer1 == "hurakau":
+if answer3 == "a" or answer1 == "huarakau":
     score += 1
     print("Paki paki! Ka pai!")
     print("\n")
@@ -53,8 +53,20 @@ else:
 
 
 # question 4
-answer4 = input("What is the Maori word for bread? \na. paraoa \nb. ika \nc. hupa\n\n").lower()
-if answer4 == "b" or answer1 == "paraoa":
+answer4 = input("What is the Maori word for egg? \na. wai kokonati \nb. hēki \nc. kawhe\n\n").lower()
+if answer4 == "b" or answer1 == "heki":
+    score += 1
+    print("Paki paki! Ka pai!")
+    print("\n")
+else:
+    print("Racist Pākehā, you're wrong. Stop colonising Aotearoa.")
+    print("Score: ", score)
+    print("\n")
+
+
+# question 5
+answer5 = input("What is the Maori word for coffee? \na. kawhe \nb. hupa \nc. huamata\n\n").lower()
+if answer5 == "a" or answer1 == "kawhe":
     score += 1
     print("Paki paki! Ka pai!")
     print("\n")
