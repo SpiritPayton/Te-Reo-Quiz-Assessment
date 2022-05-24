@@ -35,6 +35,9 @@ def instructions():
     print("The English word will mean the same food as one of the Te Reo words.")
     print("You will need to select which word you think (or hopefully know) it is.")
     print("There will be 10 rounds of questions. Above five right is a pass.")
+    print("Let's begin!")
+    print()
+    print()
 
 
 # function to format text output
@@ -115,7 +118,7 @@ while play_again != "X":
         print("Paki paki! Ka pai!")
         print("\n")
     else:
-        print("Racist Pākehā, you're wrong. Stop colonising Aotearoa.")
+        print(formatter("X", "Racist Pākehā, you're wrong. Stop colonising Aotearoa."))
         print("Score: ", score)
         print("\n")
 
@@ -127,10 +130,8 @@ while play_again != "X":
     else:
         print("Your total score is:", score, "- 非常好。")
 
-if balance < 1:
-    print("\nSorry but you have run out of money")
-    play_again = "x"
-else:
     play_again = input("\nDo you want to play another round?\n<enter> "
                        "to play "
                        "again or 'X' to exit").lower()
+    if play_again = "<enter>":
+        
