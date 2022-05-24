@@ -53,7 +53,6 @@ play_again = ""
 
 
 # Main routine goes here
-score = 0
 print(formatter("-", "Kia ora! Are you ready to test your Te Reo Māori skills?"))
 print()
 
@@ -65,57 +64,80 @@ print()
 if played_before == "no":
     instructions()
 
+rounds_played = 0
 
 # begin game - question 1
-while play_again != "X":
+while play_again != "X":  # while loop to play the quiz again or exit
+    score = 0  # reset the score to 0
+    rounds_played += 1  # keep track of rounds
+    print(formatter(".", f"Round {rounds_played}"))
+    print()
+    print("-QUESTION 1-")
     answer1 = input("What is the Maori word for bread? \na. paraoa \nb. ika \nc. hupa\n\n").lower()
     if answer1 == "a" or answer1 == "paraoa":
         score += 1
-        print("Paki paki! Ka pai!")
+        print(formatter("✓", "Paki paki! Ka pai!"))
         print("\n")
     else:
-        print("Racist Pākehā, you're wrong. Stop colonising Aotearoa.")
+        print(formatter("X", "Racist Pākehā, you're wrong. Stop colonising Aotearoa."))
         print("Score: ", score)
         print("\n")
 
     # question 2
+    print("QUESTION 2")
+    print()
     answer2 = input("What is the Maori word for meat? \na. kawhe \nb. huamata \nc. mīti\n\n").lower()
-    if answer2 == "c" or answer1 == "miti":
+    if answer2 == "c" or answer2 == "miti":
         score += 1
-        print("Paki paki! Ka pai!")
+        print(formatter("✓", "Paki paki! Ka pai!"))
         print("\n")
     else:
-        print("Racist Pākehā, you're wrong. Stop colonising Aotearoa")
+        print(formatter("X", "Racist Pākehā, you're wrong. Stop colonising Aotearoa"))
         print("Score: ", score)
         print("\n")
 
     # question 3
+    print("QUESTION 3")
     answer3 = input("What is the Maori word for fruits? \na. huarākau \nb. hēki \nc. ika\n\n").lower()
-    if answer3 == "a" or answer1 == "huarakau":
+    if answer3 == "a" or answer3 == "huarakau":
         score += 1
-        print("Paki paki! Ka pai!")
+        print(formatter("✓", "Paki paki! Ka pai!"))
         print("\n")
     else:
-        print("Racist Pākehā, you're wrong. Stop colonising Aotearoa")
+        print(formatter("X", "Racist Pākehā, you're wrong. Stop colonising Aotearoa"))
         print("Score: ", score)
         print("\n")
 
     # question 4
+    print("QUESTION 4")
     answer4 = input("What is the Maori word for egg? \na. wai kokonati \nb. hēki \nc. kawhe\n\n").lower()
-    if answer4 == "b" or answer1 == "heki":
+    if answer4 == "b" or answer4 == "heki":
         score += 1
-        print("Paki paki! Ka pai!")
+        print(formatter("✓", "Paki paki! Ka pai!"))
         print("\n")
     else:
-        print("Racist Pākehā, you're wrong. Stop colonising Aotearoa.")
+        print(formatter("X", "Racist Pākehā, you're wrong. Stop colonising Aotearoa."))
         print("Score: ", score)
         print("\n")
 
     # question 5
+    print("QUESTION 5")
     answer5 = input("What is the Maori word for coffee? \na. kawhe \nb. hupa \nc. huamata\n\n").lower()
-    if answer5 == "a" or answer1 == "kawhe":
+    if answer5 == "a" or answer5 == "kawhe":
         score += 1
-        print("Paki paki! Ka pai!")
+        print(formatter("✓", "Paki paki! Ka pai!"))
+        print("\n")
+    else:
+        print(formatter("X", "Racist Pākehā, you're wrong. Stop colonising Aotearoa."))
+        print("Score: ", score)
+        print("\n")
+
+    # question 6
+    print("QUESTION 6")
+    answer6 = input("What is the Maori word for coconut water? \na. huamata \nb. aporo wai \nc. wai kokonati\n\n").lower()
+    if answer6 == "c" or answer6 == "wai kokonati":
+        score += 1
+        print(formatter("✓", "Paki paki! Ka pai!"))
         print("\n")
     else:
         print(formatter("X", "Racist Pākehā, you're wrong. Stop colonising Aotearoa."))
@@ -123,15 +145,13 @@ while play_again != "X":
         print("\n")
 
     # final message
-    if score <= 1:
-        print("Your total score is:", score, "- Disgraceful.")
-    elif score <= 3:
-        print("Your total score is:", score, "- You did ok.")
+    if score <= 2:
+        print("Your total score is:", score, "out of 6 - Disgraceful.")
+    elif score <= 4:
+        print("Your total score is:", score, "out of 6 - You did ok.")
     else:
-        print("Your total score is:", score, "- 非常好。")
+        print("Your total score is:", score, "out of 6 - 非常好！！！")
 
-    play_again = input("\nDo you want to play another round?\n<enter> "
+    play_again = input("\nDo you want to play again to try get a higher score?\n<enter> "
                        "to play "
-                       "again or 'X' to exit").lower()
-    if play_again = "<enter>":
-        
+                       "again or 'X' to exit: ").upper()
