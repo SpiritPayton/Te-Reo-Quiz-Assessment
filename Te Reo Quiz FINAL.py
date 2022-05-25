@@ -1,4 +1,5 @@
 """Te Reo foods quiz FINAL, PEP8 checked
+added goodbye message as a final touch
 """
 
 
@@ -173,3 +174,6 @@ while play_again != "X":  # while loop to play the quiz again or exit
     play_again = input("\nDo you want to play again to "
                        "try get a higher score?\n<enter> to play "
                        "again or 'X' to exit: ").upper()
+
+print()
+print(formatter("*", "Ka kite anō!"))
