@@ -15,7 +15,7 @@ question_prompts = [
     "What is the Maori word for fruits? \na. huarākau \nb. hēki \nc. ika\n\n"]
 
 
-# ignore this
+# ignore this. it's just for me to know when creating the questions
 """bread" = "paraoa"
 "cheese" = "tīhi"
 "fish" = "ika"

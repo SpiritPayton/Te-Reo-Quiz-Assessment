@@ -11,7 +11,7 @@ no randomisation of questions or answers"""
 "meat" = "mīti"
 "soup" = "hupa"
 "coffee" = "kawhe"
-"egg" == "hēki"
+"egg" = "hēki"
 "coconut water" = "wai kokonati"""
 
 

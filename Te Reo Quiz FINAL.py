@@ -3,7 +3,7 @@ added goodbye message as a final touch
 """
 
 
-# yes/no checking functionn
+# yes/no checking function
 def yes_no(question_text):
     while True:
 
@@ -86,13 +86,12 @@ while play_again != "X":  # while loop to play the quiz again or exit
         print(formatter("✓", "Paki paki! Ka pai!"))
         print("\n")
     else:
-        print(formatter("X", "Racist Pākehā, you're wrong."
-                             " Stop colonising Aotearoa."))
+        print(formatter("X", "Pōhēhē. You're wrong."))
         print("Score: ", score)
         print("\n")
 
     # question 2
-    print("QUESTION 2")
+    print("-QUESTION 2-")
     print()
     answer2 = input("What is the Maori word for meat?"
                     " \na. kawhe \nb. huamata \nc. mīti\n\n").lower()
@@ -101,13 +100,12 @@ while play_again != "X":  # while loop to play the quiz again or exit
         print(formatter("✓", "Paki paki! Ka pai!"))
         print("\n")
     else:
-        print(formatter("X", "Racist Pākehā, you're wrong."
-                             " Stop colonising Aotearoa"))
+        print(formatter("X", "Pōhēhē. You're wrong."))
         print("Score: ", score)
         print("\n")
 
     # question 3
-    print("QUESTION 3")
+    print("-QUESTION 3-")
     answer3 = input("What is the Maori word for fruits?"
                     " \na. huarākau \nb. hēki \nc. ika\n\n").lower()
     if answer3 == "a" or answer3 == "huarakau":
@@ -115,13 +113,12 @@ while play_again != "X":  # while loop to play the quiz again or exit
         print(formatter("✓", "Paki paki! Ka pai!"))
         print("\n")
     else:
-        print(formatter("X", "Racist Pākehā, you're wrong."
-                             " Stop colonising Aotearoa"))
+        print(formatter("X", "Pōhēhē. You're wrong."))
         print("Score: ", score)
         print("\n")
 
     # question 4
-    print("QUESTION 4")
+    print("-QUESTION 4-")
     answer4 = input("What is the Maori word for egg?"
                     " \na. wai kokonati \nb. hēki \nc. kawhe\n\n").lower()
     if answer4 == "b" or answer4 == "heki":
@@ -129,13 +126,12 @@ while play_again != "X":  # while loop to play the quiz again or exit
         print(formatter("✓", "Paki paki! Ka pai!"))
         print("\n")
     else:
-        print(formatter("X", "Racist Pākehā, you're wrong."
-                             " Stop colonising Aotearoa."))
+        print(formatter("X", "Pōhēhē. You're wrong."))
         print("Score: ", score)
         print("\n")
 
     # question 5
-    print("QUESTION 5")
+    print("-QUESTION 5-")
     answer5 = input("What is the Maori word for coffee?"
                     " \na. kawhe \nb. hupa \nc. huamata\n\n").lower()
     if answer5 == "a" or answer5 == "kawhe":
@@ -143,13 +139,12 @@ while play_again != "X":  # while loop to play the quiz again or exit
         print(formatter("✓", "Paki paki! Ka pai!"))
         print("\n")
     else:
-        print(formatter("X", "Racist Pākehā, you're wrong."
-                             " Stop colonising Aotearoa."))
+        print(formatter("X", "Pōhēhē. You're wrong."))
         print("Score: ", score)
         print("\n")
 
     # question 6
-    print("QUESTION 6")
+    print("-QUESTION 6-")
     answer6 = input("What is the Maori word for coconut water?"
                     " \na. huamata \nb. aporo wai \nc. "
                     "wai kokonati\n\n").lower()
@@ -158,8 +153,7 @@ while play_again != "X":  # while loop to play the quiz again or exit
         print(formatter("✓", "Paki paki! Ka pai!"))
         print("\n")
     else:
-        print(formatter("X", "Racist Pākehā, you're wrong."
-                             " Stop colonising Aotearoa."))
+        print(formatter("X", "Pōhēhē. You're wrong."))
         print("Score: ", score)
         print("\n")
 

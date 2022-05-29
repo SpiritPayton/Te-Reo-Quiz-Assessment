@@ -1,5 +1,7 @@
-"""Te Reo foods quiz FINAL, PEP8 checked
-added goodbye message as a final touch
+"""Te Reo foods quiz final, version 2
+(In this version, I tried some things to make the program more
+compact, but due to time constraints, was unable to fully
+finish. So this version is not important.)
 """
 import random
 
