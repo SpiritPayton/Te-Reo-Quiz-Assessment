@@ -1,9 +1,20 @@
 """Te Reo foods quiz FINAL, PEP8 checked
 added goodbye message as a final touch
 """
+import random
+
+word_list = [["paraoa", "bread"], ["tīhi", "cheese"], ["ika", "fish"],
+               ["huarākau", "fruits"], ["huamata", "salad"],
+               ["mīti", "meat"], ["hupa", "soup"], ["kawhe", "coffee"],
+               ["hēki", "egg"], ["wai kokonati", "coconut water"]]
+
+random.shuffle(word_list)
+
+for i in word_list:
+    answer = input("enter the maori name of".format(i[0]))
 
 
-# yes/no checking functionn
+# yes/no checking function
 def yes_no(question_text):
     while True:
 
